@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffefd5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+img{
+    height: 50vh;
+    width: auto;
+}
+
+.container-box{
+    position: absolute;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.texto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 300px;
+    padding: 15px;
+
+}
+
+.perfume{
+    letter-spacing: 5px;
+}
+
+h5{
+    font-size: xx-large;
+    padding-top: 15px;
+}
+
+p:nth-child(3){
+    color: rgb(168, 165, 165);
+    padding-top: 15px;
+}
+
+.botao{
+    background-color: #067706;
+    color: #fff;
+    border: none;
+    width: 250px;
+    padding:13px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.botao:hover{
+    background-color: #004000;
+}
+
+.precos{
+    display: flex;
+    /* justify-content: space-around; */
+    padding: 15px;
+    align-items: center;
+}
+
+.precos p{
+    color: #067706;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.precos del{
+    color: rgb(134, 134, 134);
+    margin-left: 25px;
+}
+
+.attribution{
+    position: absolute;
+    font-size: 11px; 
+    text-align: center;
+    bottom: 5px;
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 600px) {
+    
+    img{
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .container-box{
+        flex-direction: column;
+    }
+}
+
+
